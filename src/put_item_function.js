@@ -25,7 +25,7 @@ exports.handler = async (event) => {
         
         await dynamodb.put(params).promise();
         statusCode = 200;
-        responseBody = JSON.stringify('Operação Concluída');
+        responseBody = JSON.stringify('Operação Concluída sem erros');
         
     } catch (err) {
           
